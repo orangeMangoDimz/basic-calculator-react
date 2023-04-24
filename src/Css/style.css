@@ -1,0 +1,10 @@
+.btn-light{
+    height: 75px;
+    background-color: #787b85;
+    margin-right: 20px;
+    color: #f4f1d6;
+}
+
+body{
+    background-color: gray;
+}
