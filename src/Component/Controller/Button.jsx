@@ -1,15 +1,19 @@
-import React from 'react';
-import '../../Css/style.css'
+import React from "react";
+import "../../Css/style.css";
 
-const Button = ({val, operator=false, colSize}) => {
+const Button = ({ val, e, operator = false, colSize }) => {
+  return (
+    <>
+      <button
+        onClick={() => e(val)}
+        className={`btn col-${colSize} fw-normal fs-3 ${
+          operator ? "btn-warning" : "btn-light"
+        }`}
+      >
+        {val}
+      </button>
+    </>
+  );
+};
 
-    return (
-        <>
-            <button className={`btn col-${colSize} fw-normal fs-3 ${operator ? 'btn-warning' : 'btn-light'}`} onClick={() => } >
-                {val}
-            </button>
-        </>
-    )
-}
-
-export default Button
+export default Button;
